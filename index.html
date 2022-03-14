@@ -5,27 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta placeholder="viewport" content="width=device-width, initial-scale=1.0">
     <title>Determinant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" name="" id="display-result">
-    <br>
-    <input type="number" value=""  placeholder="x1" id="x1">
-    <input type="number" value=""  placeholder="y1" id="y1">
+    <main class="container">
+    <h1>Determinant Calculator</h1>
+    <div class="display-div">
+        <input type="text" style="width:100%;" name="" id="display-result">
+    </div>
+    <div class="input-div">
+    <div class="input-coulmn">
+        <input type="number" value=""  placeholder="x1" id="x1">
+        <input type="number" value=""  placeholder="x2" id="x2">
+        <input type="number" value=""  placeholder="x3" id="x3">
+    </div>
+    
+    <div class="input-column">
+        <input type="number" value=""  placeholder="y1" id="y1">
+        <input type="number" value=""  placeholder="y2" id="y2">
+        <input type="number" value=""  placeholder="y3" id="y3">
+    </div>
+    
+    <div class="input-column">
     <input type="number" value=""  placeholder="z1" id="z1">
-    <input type="number" value=""  placeholder="c1" id="c1">
-    <br>
-    <input type="number" value=""  placeholder="x2" id="x2">
-    <input type="number" value=""  placeholder="y2" id="y2">
     <input type="number" value=""  placeholder="z2" id="z2">
-    <input type="number" value=""  placeholder="c2" id="c2">
-    <br>
-    <input type="number" value=""  placeholder="x3" id="x3">
-    <input type="number" value=""  placeholder="y3" id="y3">
     <input type="number" value=""  placeholder="z3" id="z3">
-    <input type="number" value=""  placeholder="c3" id="c3">
-    <br>
-    <button onclick="showResult()">result</button>
+    </div>
 
+    
+    <input type="number" value=""  placeholder="c1" id="c1">
+    <input type="number" value=""  placeholder="c2" id="c2">
+    <input type="number" value=""  placeholder="c3" id="c3">
+    </div>
+
+    
+    <div class="btn-div">
+        <button class="btn" onclick="clear()">reset</button>
+        <button class="btn" id="result-btn" onclick="showResult()">result</button>
+    </div>    
+
+
+    </main>
 <!-- javascript link  -->
 <script src="/determinant.js"></script>
 </body>

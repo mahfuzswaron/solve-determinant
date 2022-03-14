@@ -73,12 +73,23 @@ const Dy = DOf('y');
 const Dz = DOf('z');
 
 
-const x = Dx / D;
-const y = Dy / D;
-const z = Dz / D;
+const x = Math.round(Dx / D);
+const y = Math.round( Dy / D);
+const z = Math.round(Dz / D);
 
 console.log(x, y, z);
 const displayField = document.getElementById('display-result');
-displayField.value = `x: ${x}, y: ${y}, z: ${z}`
+if(!x || !y || !z){
+    displayField.value= 'Please enter valid equations';
+    return;
+}
+else{
+    displayField.value = `x: ${x}, y: ${y}, z: ${z}`
+}
 
 };
+
+const clear = () =>{
+    document.getElementsByTagName('input').value = ' ';
+    console.log('clicked')
+}
