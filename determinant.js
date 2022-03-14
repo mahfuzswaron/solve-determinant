@@ -15,7 +15,6 @@ const c1 = parseInt(document.getElementById('c1').value);
 const c2 = parseInt(document.getElementById('c2').value);
 const c3 = parseInt(document.getElementById('c3').value);
 
-
 const A = x1 * ((y2*z3) - (z2 * y3));
 const B = y1* ((x2 * z3) - (z2 * x3));
 const C = z1* ((x2 * y3) - (y2 * x3));
@@ -68,6 +67,7 @@ const DOf = (v) =>{
     }
     
 }
+
 const Dx = DOf('x');
 const Dy = DOf('y');
 const Dz = DOf('z');
@@ -88,8 +88,3 @@ else{
 }
 
 };
-
-const clear = () =>{
-    document.getElementsByTagName('input').value = ' ';
-    console.log('clicked')
-}
